@@ -1,0 +1,21 @@
+{
+  "title": "An example with CVs",
+  "supported_type": "Study",
+  "enabled": true,
+  "attributes": [
+    {
+      "title": "agricultural implement",
+      "type": "Controlled Vocabulary List",
+      "required": true,
+      "pos": 1,
+      "ID": 10
+    },
+    {
+      "title": "Extended metadata for models - execution software",
+      "type": "Controlled Vocabulary",
+      "required": true,
+      "pos": 2,
+      "ID": 8
+    }
+  ]
+}

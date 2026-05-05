@@ -1,0 +1,31 @@
+<%= render partial: 'general/item_title', locals: { item: @measurement, buttons_partial: 'assets/asset_buttons' } %>
+
+<%= render partial: 'general/show_page_tab_definitions' %>
+
+<div class="tab-content">
+  <%= tab_pane('overview') do %>
+    <%= item_description @measurement.description -%>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <%= persistent_resource_id(@measurement) %>
+
+        <%= render :partial => 'projects/show_project_relationship', :locals => {:resource => @measurement} %>
+
+        <% unless @measurement.contributor.nil? then %>
+          <p>
+            <label>Created by:</label>
+            <%= link_to @measurement.contributor.name, @measurement.contributor -%>
+          </p>
+        <% end %>
+      </div>
+    </div>
+
+    <%= render partial: 'extended_metadata/extended_metadata_attribute_values', locals: { resource: @measurement } %>
+
+  <% end %>
+
+  <%= tab_pane('related-items') do %>
+    <%= render partial: 'general/items_related_to', object: @measurement %>
+  <% end %>
+</div>

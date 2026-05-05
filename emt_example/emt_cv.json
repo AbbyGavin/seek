@@ -1,0 +1,30 @@
+{
+  "title": "My Study Metadata",
+  "supported_type": "Investigation",
+  "enabled": true,
+  "attributes": [
+    {
+      "title": "Version",
+      "label": "Version",
+      "type": "Integer",
+      "required": true,
+      "pos": 1
+    },
+    {
+      "title": "Start Time",
+      "label": "Start Time",
+      "type": "Date",
+      "required": true,
+      "pos": 2
+    },
+    {
+      "title": "Gender",
+      "label": "Gender",
+      "type": "Controlled Vocabulary",
+      "required": true,
+      "pos": 3,
+      "ID": 139
+    }
+  ]
+}
+

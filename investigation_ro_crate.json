@@ -1,0 +1,400 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.1/context",
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "about": {
+        "@id": "./"
+      },
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      }
+    },
+    {
+      "@id": "ro-crate-preview.html",
+      "@type": "CreativeWork",
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "mainEntity": {
+        "@id": "http://localhost:3000/investigations/973655918"
+      },
+      "hasPart": [
+        {
+          "@id": "http://localhost:3000/investigations/973655918"
+        },
+        {
+          "@id": "http://localhost:3000/studies/1060385860"
+        },
+        {
+          "@id": "http://localhost:3000/studies/1060385861"
+        },
+        {
+          "@id": "http://localhost:3000/assays/1035387712"
+        },
+        {
+          "@id": "test-file-1.csv"
+        },
+        {
+          "@id": "http://localhost:3000/assays/1035387713"
+        },
+        {
+          "@id": "test-file-2.csv"
+        },
+        {
+          "@id": "http://localhost:3000/assays/1035387714"
+        },
+        {
+          "@id": "http://localhost:3000/assays/1035387715"
+        },
+        {
+          "@id": "test-file-3.csv"
+        },
+        {
+          "@id": "http://localhost:3000/assays/1035387716"
+        },
+        {
+          "@id": "test-file-4.csv"
+        },
+        {
+          "@id": "http://localhost:3000/assays/1035387717"
+        },
+        {
+          "@id": "test-file-5.csv"
+        }
+      ]
+    },
+    {
+      "@id": "http://localhost:3000/investigations/973655918",
+      "@type": "Dataset",
+      "name": "An Investigation for a SEEK test case",
+      "description": "testing testing testing testing testing testing testing testing testing testing inv",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Associated publication",
+          "propertyID": "http://fairbydesign.nl/ontology/associated_publication",
+          "value": "10.1371/journal.pone.0071377"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "http://localhost:3000/studies/1060385860"
+        },
+        {
+          "@id": "http://localhost:3000/studies/1060385861"
+        }
+      ]
+    },
+    {
+      "@id": "http://localhost:3000/studies/1060385860",
+      "@type": "Dataset",
+      "name": "test study 1",
+      "description": "testing testing testing testing testing testing testing testing testing testing study 1",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "End date of study",
+          "propertyID": "http://fairbydesign.nl/ontology/end_date_of_study",
+          "value": "2024-08-08"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Start date of study",
+          "propertyID": "http://fairbydesign.nl/ontology/start_date_of_study",
+          "value": "2024-08-01"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Experimental site name",
+          "propertyID": "http://fairbydesign.nl/ontology/experimental_site_name",
+          "value": "manchester test site"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "http://localhost:3000/assays/1035387712"
+        }
+      ]
+    },
+    {
+      "@id": "http://localhost:3000/studies/1060385861",
+      "@type": "Dataset",
+      "name": "test study 2",
+      "description": "testing testing testing testing testing testing testing testing testing testing study 2",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "End date of study",
+          "propertyID": "http://fairbydesign.nl/ontology/end_date_of_study",
+          "value": "2024-08-18"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Start date of study",
+          "propertyID": "http://fairbydesign.nl/ontology/start_date_of_study",
+          "value": "2024-08-10"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Experimental site name",
+          "propertyID": "http://fairbydesign.nl/ontology/experimental_site_name",
+          "value": "manchester test site"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "http://localhost:3000/assays/1035387713"
+        },
+        {
+          "@id": "http://localhost:3000/assays/1035387714"
+        },
+        {
+          "@id": "http://localhost:3000/assays/1035387715"
+        },
+        {
+          "@id": "http://localhost:3000/assays/1035387716"
+        },
+        {
+          "@id": "http://localhost:3000/assays/1035387717"
+        }
+      ]
+    },
+    {
+      "@id": "http://localhost:3000/assays/1035387712",
+      "@type": "Dataset",
+      "name": "Assay - seek-test-assay-1",
+      "description": "testing testing testing testing testing testing testing testing testing testing assay 1",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Facility",
+          "propertyID": "http://fairbydesign.nl/ontology/facility",
+          "value": "test facility"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Protocol",
+          "propertyID": "http://fairbydesign.nl/ontology/protocol",
+          "value": "sop 1"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Assay date",
+          "propertyID": "http://schema.org/dateCreated",
+          "value": "2024-09-10"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "test-file-1.csv"
+        }
+      ]
+    },
+    {
+      "@id": "test-file-1.csv",
+      "@type": [
+        "File",
+        "Dataset"
+      ],
+      "name": "Dataset: test-file-1.csv",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@id": "http://localhost:3000/assays/1035387713",
+      "@type": "Dataset",
+      "name": "Assay - seek-test-assay-2",
+      "description": "testing testing testing testing testing testing testing testing testing testing assay 2",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Facility",
+          "propertyID": "http://fairbydesign.nl/ontology/facility",
+          "value": "test facility"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Protocol",
+          "propertyID": "http://fairbydesign.nl/ontology/protocol",
+          "value": "protocol 2"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Assay date",
+          "propertyID": "http://schema.org/dateCreated",
+          "value": "2024-09-11"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "test-file-2.csv"
+        }
+      ]
+    },
+    {
+      "@id": "test-file-2.csv",
+      "@type": [
+        "File",
+        "Dataset"
+      ],
+      "name": "Dataset: test-file-2.csv",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@id": "http://localhost:3000/assays/1035387714",
+      "@type": "Dataset",
+      "name": "Assay - seek-test-assay-3",
+      "description": "testing testing testing testing testing testing testing testing testing testing assay 3",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Facility",
+          "propertyID": "http://fairbydesign.nl/ontology/facility",
+          "value": "test facility"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Protocol",
+          "propertyID": "http://fairbydesign.nl/ontology/protocol",
+          "value": "sop 3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Assay date",
+          "propertyID": "http://schema.org/dateCreated",
+          "value": "2024-09-12"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "test-file-3.csv"
+        }
+      ]
+    },
+    {
+      "@id": "http://localhost:3000/assays/1035387715",
+      "@type": "Dataset",
+      "name": "Assay - seek-test-assay-6",
+      "description": "testing testing testing testing testing testing testing testing testing testing assay 6",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Facility",
+          "propertyID": "http://fairbydesign.nl/ontology/facility",
+          "value": "test facility"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Protocol",
+          "propertyID": "http://fairbydesign.nl/ontology/protocol",
+          "value": "sop 6"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Assay date",
+          "propertyID": "http://schema.org/dateCreated",
+          "value": "2024-09-15"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "test-file-3.csv"
+        }
+      ]
+    },
+    {
+      "@id": "test-file-3.csv",
+      "@type": [
+        "File",
+        "Dataset"
+      ],
+      "name": "Dataset: test-file-3.csv",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@id": "http://localhost:3000/assays/1035387716",
+      "@type": "Dataset",
+      "name": "Assay - seek-test-assay-4",
+      "description": "testing testing testing testing testing testing testing testing testing testing assay 4",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Facility",
+          "propertyID": "http://fairbydesign.nl/ontology/facility",
+          "value": "test facility"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Protocol",
+          "propertyID": "http://fairbydesign.nl/ontology/protocol",
+          "value": "sop 4"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Assay date",
+          "propertyID": "http://schema.org/dateCreated",
+          "value": "2024-09-13"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "test-file-4.csv"
+        }
+      ]
+    },
+    {
+      "@id": "test-file-4.csv",
+      "@type": [
+        "File",
+        "Dataset"
+      ],
+      "name": "Dataset: test-file-4.csv",
+      "encodingFormat": "application/octet-stream"
+    },
+    {
+      "@id": "http://localhost:3000/assays/1035387717",
+      "@type": "Dataset",
+      "name": "Assay - seek-test-assay-5",
+      "description": "testing testing testing testing testing testing testing testing testing testing assay 5",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Facility",
+          "propertyID": "http://fairbydesign.nl/ontology/facility",
+          "value": "test facility"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Protocol",
+          "propertyID": "http://fairbydesign.nl/ontology/protocol",
+          "value": "sop 5"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Assay date",
+          "propertyID": "http://schema.org/dateCreated",
+          "value": "2024-09-14"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "test-file-5.csv"
+        }
+      ]
+    },
+    {
+      "@id": "test-file-5.csv",
+      "@type": [
+        "File",
+        "Dataset"
+      ],
+      "name": "Dataset: test-file-5.csv",
+      "encodingFormat": "application/octet-stream"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "@context": {
+    "jerm": "http://jermontology.org/ontology/JERMOntology#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "healthdcatap": "http://healthdataportal.eu/ns/health#",
+    "seekh": "https://seek4science.org/vocab/seekh#",
+    "dpv": "https://w3id.org/dpv#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "sioc": "http://rdfs.org/sioc/ns#",
+    "mixs": "https://w3id.org/mixs/",
+    "uniprot": "http://purl.uniprot.org/core/",
+    "fairbd": "http://fairbydesign.nl/ontology/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "http://localhost:3000/data_files/3",
+      "@type": [
+        "jerm:Data",
+        "dcat:Dataset"
+      ],
+      "jerm:hasContributor": {
+        "@id": "http://localhost:3000/people/1"
+      },
+      "dcterms:created": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-04-28T09:55:50.392Z"
+      },
+      "dcterms:description": "Clinical data of hospitalised COVID-19 patients across European hospitals.",
+      "dcterms:title": "COVID-19 Patient Registry",
+      "jerm:description": "Clinical data of hospitalised COVID-19 patients across European hospitals.",
+      "jerm:title": "COVID-19 Patient Registry",
+      "sioc:has_owner": {
+        "@id": "http://localhost:3000/people/1"
+      },
+      "dcterms:modified": {
+        "@type": "xsd:dateTime",
+        "@value": "2026-04-28T09:55:50.392Z"
+      },
+      "jerm:isPartOf": {
+        "@id": "http://localhost:3000/assays/10"
+      },
+      "jerm:itemProducedBy": {
+        "@id": "http://localhost:3000/projects/1"
+      },
+      "jerm:seekID": {
+        "@type": "xsd:anyURI",
+        "@value": "http://localhost:3000/data_files/3"
+      },
+      "healthdcatap:healthCategory": {
+        "@id": "http://13.81.34.152:1101/resource/authority/healthcategories/INFECTIOUS_DISEASE"
+      },
+      "healthdcatap:populationCoverage": "Adult hospitalised COVID-19 patients aged 18-65",
+      "healthdcatap:minimumTypicalAge": "18",
+      "healthdcatap:maximumTypicalAge": "65",
+      "healthdcatap:numberOfRecords": "50000",
+      "healthdcatap:trusteddataholder": "true",
+      "dpv:hasPersonalData": {
+        "@id": "https://w3id.org/dpv/dpv-pd#HealthRecord"
+      },
+      "dcterms:accessRights": {
+        "@id": "http://publications.europa.eu/resource/authority/access-right/RESTRICTED"
+      },
+      "healthdcatap:retentionPeriod": {
+        "@id": "_:g491020"
+      }
+    },
+    {
+      "@id": "_:g491020",
+      "@type": "dcterms:PeriodOfTime",
+      "dcat:startDate": "2020-03-01",
+      "dcat:endDate": "2030-12-31"
+    }
+  ]
+}

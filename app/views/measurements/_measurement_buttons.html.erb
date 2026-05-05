@@ -1,0 +1,14 @@
+<% measurement ||= item %>
+
+<% if measurement.can_edit?(current_user) %>
+  <%= button_link_to 'Edit', 'edit', edit_measurement_path(measurement) %>
+<% end %>
+
+<% if measurement.can_manage?(current_user) %>
+  <%= button_link_to 'Manage', 'cog', manage_measurement_path(measurement) %>
+<% end %>
+
+<% if measurement.can_delete?(current_user) %>
+  <%= button_link_to 'Delete', 'destroy', measurement_path(measurement), method: :delete, data: { confirm: 'Are you sure?' } %>
+<% end %>
+

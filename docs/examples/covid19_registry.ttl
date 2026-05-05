@@ -1,0 +1,34 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dpv: <https://w3id.org/dpv#> .
+@prefix healthdcatap: <http://healthdataportal.eu/ns/health#> .
+@prefix jerm: <http://jermontology.org/ontology/JERMOntology#> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://localhost:3000/data_files/3> a jerm:Data,
+    dcat:Dataset;
+  dcterms:title "COVID-19 Patient Registry";
+  healthdcatap:healthCategory <http://13.81.34.152:1101/resource/authority/healthcategories/INFECTIOUS_DISEASE>;
+  healthdcatap:maximumTypicalAge "65";
+  healthdcatap:minimumTypicalAge "18";
+  healthdcatap:numberOfRecords "50000";
+  healthdcatap:populationCoverage "Adult hospitalised COVID-19 patients aged 18-65";
+  healthdcatap:retentionPeriod [
+    a dcterms:PeriodOfTime;
+    dcat:endDate "2030-12-31";
+    dcat:startDate "2020-03-01"
+  ];
+  healthdcatap:trusteddataholder "true";
+  jerm:description "Clinical data of hospitalised COVID-19 patients across European hospitals.";
+  jerm:hasContributor <http://localhost:3000/people/1>;
+  jerm:isPartOf <http://localhost:3000/assays/10>;
+  jerm:itemProducedBy <http://localhost:3000/projects/1>;
+  jerm:seekID "http://localhost:3000/data_files/3"^^xsd:anyURI;
+  jerm:title "COVID-19 Patient Registry";
+  dcterms:accessRights <http://publications.europa.eu/resource/authority/access-right/RESTRICTED>;
+  dcterms:created "2026-04-28T09:55:50.392Z"^^xsd:dateTime;
+  dcterms:description "Clinical data of hospitalised COVID-19 patients across European hospitals.";
+  dcterms:modified "2026-04-28T09:55:50.392Z"^^xsd:dateTime;
+  sioc:has_owner <http://localhost:3000/people/1>;
+  dpv:hasPersonalData <https://w3id.org/dpv/dpv-pd#HealthRecord> .

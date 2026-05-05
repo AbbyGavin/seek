@@ -1,0 +1,17 @@
+{
+  "title": "colours",
+  "supported_type": "Study",
+  "enabled": true,
+  "attributes": [
+    {
+      "title": "colour_name",
+      "label": "colour_name",
+      "description": null,
+      "type": "Linked Extended Metadata (multiple)",
+      "required": false,
+      "ID": 26
+      //specify the ID of the "colour" Extended Metadata Type here
+    }
+  ]
+}
+

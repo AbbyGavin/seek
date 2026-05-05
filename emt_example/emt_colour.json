@@ -1,0 +1,11 @@
+{
+  "title": "colour",
+  "supported_type": "ExtendedMetadata",
+  "enabled": true,
+  "attributes": [
+    {
+      "title": "colour_name",
+      "type": "String"
+    }
+  ]
+}

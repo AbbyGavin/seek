@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+# Usage: rails runner script/reset_and_seed
+# Or directly: ruby script/reset_and_seed
+
+steps = [
+  'bundle exec rake db:drop db:create db:schema:load',
+  'bundle exec rake db:seed:example_data',
+  'bundle exec rake seek_hu:create_me'
+]
+
+steps.each do |cmd|
+  puts "\n==> #{cmd}"
+  system(cmd) || abort("Failed: #{cmd}")
+end
+
+puts "\nDone. Fresh database ready."
+
+

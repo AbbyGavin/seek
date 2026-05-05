@@ -1,0 +1,66 @@
+<table class="table table-bordered align-middle">
+  <thead class="table-dark">
+  <tr>
+    <th colspan="4" class="text-center">Local Institution</th>
+    <th colspan="4" class="text-center">ROR Match</th>
+    <th rowspan="2" class="text-center" style="width: 220px;">Action</th>
+  </tr>
+  <tr>
+    <!-- Local headers -->
+    <th scope="col" style="width: 60px;">ID</th>
+    <th scope="col" style="width: 150px;">Title</th>
+    <th scope="col" style="width: 100px;">Country</th>
+    <th scope="col" style="width: 120px;">City</th>
+    <!-- Remote headers -->
+    <th scope="col" style="width: 120px;">ROR ID</th>
+    <th scope="col" style="width: 80px;">Score</th>
+    <th scope="col" style="width: 130px;">Matching Type</th>
+    <th scope="col" style="width: 80px;">Chosen</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @best_match_institutions.each do |institution| %>
+    <tr>
+      <!-- Local data -->
+      <td><%= institution[:id] %></td>
+      <td class="text-truncate" style="max-width:150px;"><%= institution[:title] %></td>
+      <td><%= CountryCodes.country(institution[:country]) %></td>
+      <td><%= institution[:city] %></td>
+
+      <!-- ROR data -->
+      <td>
+        <%= link_to institution[:matching_id],
+                    "https://ror.org/#{institution[:matching_id]}",
+                    target: "_blank", rel: "noopener" %>
+      </td>
+      <td><%= institution[:score] %></td>
+      <td><%= institution[:matching_type] %></td>
+      <td>
+        <% if institution[:chosen] %>
+          <span class="badge bg-success">Yes</span>
+        <% else %>
+          <span class="badge bg-danger">No</span>
+        <% end %>
+      </td>
+
+      <!-- Action buttons -->
+      <td class="text-center">
+        <%
+          accept_class = if institution[:chosen]
+                           if institution[:score].to_s == "1.0" && institution[:matching_type] == "EXACT"
+                             'btn-success' # green
+                           else
+                             'btn-warning' # yellow
+                           end
+                         else
+                           'btn-danger' # red
+                         end
+        %>
+
+        <%= button_to 'Accept', institution_path(institution[:id]),
+                      method: :post, class: "btn #{accept_class} btn-sm me-2" %>
+      </td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

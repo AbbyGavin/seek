@@ -1,0 +1,16 @@
+<%= list_item_description resource.description %>
+
+<div class="row">
+  <div class="col-sm-6">
+    <% if resource.contributor %>
+      <%= list_item_person_list [resource.contributor.person] %>
+    <% end %>
+    <%= list_item_contributors resource %>
+  </div>
+  <div class="col-sm-6">
+    <% if resource.projects.any? %>
+      <%= list_item_authorized_list resource.projects, t('project').pluralize, true, 50, true %>
+    <% end %>
+  </div>
+</div>
+

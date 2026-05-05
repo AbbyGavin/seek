@@ -1,0 +1,45 @@
+{
+  "title": "role_emt",
+  "supported_type": "ExtendedMetadata",
+  "enabled": true,
+  "attributes": [
+    {
+      "title": "role_name_personal_title",
+      "type": "Controlled Vocabulary",
+      "required": true,
+      "ID": 13,
+      "label": "personal title",
+      "description": "personal title"
+    },
+    {
+      "title": "first_name",
+      "type": "String",
+      "required": false,
+      "label": "first name",
+      "description": "first name"
+    },
+    {
+      "title": "last_name",
+      "type": "String",
+      "required": false,
+      "label": "last name",
+      "description": "last name"
+    },
+    {
+      "title": "role_type",
+      "type": "Controlled Vocabulary",
+      "required": true,
+      "ID": 12,
+      "label": "role type",
+      "description": "role type"
+    },
+    {
+      "title": "role_name_identifiers",
+      "type": "Linked Extended Metadata (multiple)",
+      "required": false,
+      "ID": 158,
+      "label": "role name identifiers",
+      "description": "role name identifiers"
+    }
+  ]
+}

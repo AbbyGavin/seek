@@ -1,0 +1,20 @@
+{
+  "title": "Data Metadata",
+  "supported_type": "Study",
+  "enabled": true,
+  "attributes": [
+    {
+      "title": "data types",
+      "label": "Data Types",
+      "type": "Ontology Term",
+      "required": true
+    },
+    {
+      "title": "data formats",
+      "label": "Data Formats",
+      "type": "Ontology Term",
+      "required": true
+    }
+  ]
+}
+

@@ -1,0 +1,16 @@
+{
+  "title": "publication metadata",
+  "supported_type": "Study",
+  "enabled": true,
+  "attributes": [
+    {
+      "title": "publication title",
+      "type": "String",
+      "required": true
+    },
+    {
+      "title": "DOI",
+      "type": "DOI"
+    }
+  ]
+}

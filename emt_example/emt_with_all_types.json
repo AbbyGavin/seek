@@ -1,0 +1,81 @@
+{
+  "title": "An example with all attribute types",
+  "supported_type": "Study",
+  "enabled": true,
+  "attributes": [
+    {
+      "title": "title",
+      "required": true,
+      "type": "String",
+      "label": "study title",
+      "description": "study title"
+    },
+    {
+      "title": "description",
+      "required": true,
+      "type": "Text",
+      "label": "study description",
+      "description": "study description"
+    },
+    {
+      "title": "study_start_date",
+      "required": true,
+      "type": "Date",
+      "label": "study start date",
+      "description": "study start date"
+
+    },
+    {
+      "title": "study_start_time",
+      "required": true,
+      "type": "Date time",
+      "label": "study start time",
+      "description": "study start time"
+    },
+    {
+      "title": "study_age",
+      "required": true,
+      "type": "Integer",
+      "label": "study age",
+      "description": "study age"
+    },
+    {
+      "title": "cholesterol_level",
+      "required": true,
+      "type": "Real number",
+      "label": "cholesterol level",
+      "description": "cholesterol level"
+    },
+    {
+      "title": "resource_use_rights_authors_confirmation",
+      "required": true,
+      "type": "Boolean",
+      "label": "resource use rights authors confirmation",
+      "description": "resource use rights authors confirmation"
+    },
+    {
+      "title": "resource_type_general",
+      "required": true,
+      "type": "Controlled Vocabulary",
+      "ID": 16,
+      "label": "resource type general",
+      "description": "resource type general"
+    },
+    {
+      "title": "resource_study_country",
+      "type": "Controlled Vocabulary List",
+      "required": true,
+      "ID": 15,
+      "label": "study country",
+      "description": "study country"
+    },
+    {
+      "title": "role",
+      "type": "Linked Extended Metadata (multiple)",
+      "required": false,
+      "ID": 159,
+      "label": "role",
+      "description":"role"
+    }
+  ]
+}

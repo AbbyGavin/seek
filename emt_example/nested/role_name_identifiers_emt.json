@@ -1,0 +1,22 @@
+{
+  "title": "role_name_identifiers",
+  "supported_type": "ExtendedMetadata",
+  "enabled": true,
+  "attributes": [
+    {
+      "title": "scheme",
+      "type": "Controlled Vocabulary",
+      "required": true,
+      "ID": 14,
+      "label": "scheme",
+      "description": "scheme"
+    },
+    {
+      "title": "identifier",
+      "type": "String",
+      "required": false,
+      "label": "identifier",
+      "description": "identifier"
+    }
+  ]
+}

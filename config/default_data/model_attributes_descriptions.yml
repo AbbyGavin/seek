@@ -1,0 +1,6 @@
+age: "The age of the patient."
+clustering: "The clustering coefficient of the model, a value between 0.0 (no clustering, i.e. a personalized model) and 1.0 (for a population-based model)."
+credibility: "The credibility of the model, a value between 0.0 (no credibility resp. credibility not yet assessed) and 1.0 (for a fully credible model)."
+execution_software: "The software for executing the model."
+ontologies: "The ontologies used by the model."
+scale: "The qualitative scale (Molecular, Organelle, Cell, Tissue, Organ, System, Body, Community (Population or cohort), Unknown)."

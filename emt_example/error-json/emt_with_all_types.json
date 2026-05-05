@@ -1,0 +1,90 @@
+{
+  "title": "An example with all attribute types",
+  "supported_type": "Investigation",
+  "enabled": true,
+  "attributes": [
+    {
+      "title1": "title",
+      "required": true,
+      "type": "String",
+      "description": "the title of your study",
+      "label": "study title"
+    },
+    {
+      "title": "description",
+      "required": true,
+      "type": "Text",
+      "description": "the description of your study",
+      "label": "study description"
+    },
+    {
+      "title": "study_start_date",
+      "required": true,
+      "type": "Date",
+      "description": "Study start date",
+      "label": "study start date"
+    },
+    {
+      "title": "study_start_time",
+      "required": true,
+      "type": "Date time",
+      "description": "Study start time",
+      "label": "study start time"
+    },
+    {
+      "title": "study_age",
+      "required": true,
+      "type": "Integer",
+      "description": "Study age",
+      "label": "study age"
+    },
+    {
+      "title": "cholesterol_level",
+      "required": true,
+      "type": "Real number",
+      "description": "Cholesterol level",
+      "label": "cholesterol level"
+    },
+    {
+      "title": "resource_use_rights_authors_confirmation",
+      "required": true,
+      "type": "Boolean",
+      "description": "Resource use rights authors confirmation",
+      "label": "resource use rights authors confirmation"
+    },
+    {
+      "title": "role_name_personal_title",
+      "required": true,
+      "type": "Controlled Vocabulary",
+      "description": "role name personal title",
+      "label": "role name personal title",
+      "ID": 24
+    },
+    {
+      "title": "resource_type_general",
+      "label": "Resource type general",
+      "description": "resource type general",
+      "type": "Controlled Vocabulary",
+      "required": true,
+      "pos": 1,
+      "ID": 27
+    },
+    {
+      "title": "resource_study_country",
+      "label": "Study country",
+      "description": "study country",
+      "type": "Controlled Vocabulary List",
+      "required": true,
+      "pos": 2,
+      "ID": 26
+    },
+    {
+      "title": "role",
+      "label": "role",
+      "description":"role",
+      "type": "Linked Extended Metadata",
+      "required": false,
+      "ID": 204
+    }
+  ]
+}

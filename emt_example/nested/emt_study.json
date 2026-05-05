@@ -1,0 +1,254 @@
+{
+  "extended_metadata_types": [
+    {
+      "title": "role_name_identifiers",
+      "supported_type": "ExtendedMetadata",
+      "enabled": true,
+      "attributes": [
+        {
+          "title": "scheme",
+          "label": "scheme",
+          "description": "scheme",
+          "type": "Controlled Vocabulary",
+          "required": true,
+          "ID": 1
+        },
+        {
+          "title": "identifier",
+          "label": "identifier",
+          "description": null,
+          "type": "String",
+          "required": false
+        }
+      ]
+    },
+    {
+      "title": "role_emt",
+      "supported_type": "ExtendedMetadata",
+      "enabled": true,
+      "attributes": [
+        {
+          "title": "role_name_personal_title",
+          "label": "personal title",
+          "description": "role_name_personal_title",
+          "type": "Controlled Vocabulary",
+          "required": true,
+          "ID": 2
+        },
+        {
+          "title": "first_name",
+          "label": "first name",
+          "description": "First name of the role",
+          "type": "String",
+          "required": false
+        },
+        {
+          "title": "last_name",
+          "label": "last name",
+          "description": "Last name of the role",
+          "type": "String",
+          "required": false
+        },
+        {
+          "title": "role_type",
+          "label": "Role type",
+          "description": "role type",
+          "type": "Controlled Vocabulary",
+          "required": true,
+          "ID": 3
+        },
+        {
+          "title": "role_name_identifiers",
+          "label": "role_name_identifiers",
+          "description": null,
+          "type": "Linked Extended Metadata (multiple)",
+          "required": false,
+          "ID": 4
+        }
+      ]
+    },
+    {
+      "title": "resource_use_rights_emt",
+      "supported_type": "ExtendedMetadata",
+      "enabled": true,
+      "attributes": [
+        {
+          "title": "resource_use_rights_label",
+          "label": "resource_use_rights_label",
+          "description": null,
+          "type": "Controlled Vocabulary",
+          "required": true,
+          "ID": 5
+        },
+        {
+          "title": "resource_use_rights_description",
+          "label": "resource_use_rights_description",
+          "description": null,
+          "type": "Text",
+          "required": false
+        },
+        {
+          "title": "resource_use_rights_authors_confirmation",
+          "label": "resource_use_rights_authors_confirmation",
+          "description": null,
+          "type": "Boolean",
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "study_conditions_emt",
+      "supported_type": "ExtendedMetadata",
+      "enabled": true,
+      "attributes": [
+        {
+          "title": "study_conditions",
+          "label": "study_conditions",
+          "description": "study_conditions",
+          "type": "String",
+          "required": true
+        },
+        {
+          "title": "study_conditions_classification",
+          "label": "study_conditions_classification",
+          "description": "study_conditions_classification",
+          "type": "String",
+          "required": false
+        },
+        {
+          "title": "study_conditions_classification_code",
+          "label": "study_conditions_classification_code",
+          "description": "study_conditions_classification_code",
+          "type": "String",
+          "required": false
+        }
+      ]
+    },
+    {
+      "title": "study_design_emt",
+      "supported_type": "ExtendedMetadata",
+      "enabled": true,
+      "attributes": [
+        {
+          "title": "study_primary_design",
+          "label": "study_primary_design",
+          "description": null,
+          "type": "Controlled Vocabulary",
+          "required": true,
+          "ID": 6
+        },
+        {
+          "title": "study_conditions",
+          "label": "study_conditions",
+          "description": null,
+          "type": "Linked Extended Metadata (multiple)",
+          "required": false,
+          "ID": 7
+        }
+      ]
+    },
+    {
+      "title": "My Study Metadata Example",
+      "supported_type": "Study",
+      "enabled": true,
+      "attributes": [
+        {
+          "title": "title",
+          "label": "study title",
+          "description": "the title of your study",
+          "type": "String",
+          "required": true
+        },
+        {
+          "title": "description",
+          "label": "description",
+          "description": null,
+          "type": "Text",
+          "required": true
+        },
+        {
+          "title": "study_age",
+          "label": "study_age",
+          "description": null,
+          "type": "Integer",
+          "required": true
+        },
+        {
+          "title": "cholesterol_level",
+          "label": "cholesterol_level",
+          "description": null,
+          "type": "Float",
+          "required": true
+        },
+        {
+          "title": "resource_type_general",
+          "label": "resource_type_general",
+          "description": "resource_type_general",
+          "type": "Controlled Vocabulary",
+          "required": true,
+          "ID": 8
+        },
+        {
+          "title": "study_start_date",
+          "label": "study_start_date",
+          "description": null,
+          "type": "Date",
+          "required": true
+        },
+        {
+          "title": "study_start_time",
+          "label": "study_start_time",
+          "description": null,
+          "type": "Date time",
+          "required": true
+        },
+        {
+          "title": "study_end_date",
+          "label": "study_end_date",
+          "description": null,
+          "type": "Date",
+          "required": false
+        },
+        {
+          "title": "study_end_time",
+          "label": "study_end_time",
+          "description": null,
+          "type": "Date time",
+          "required": false
+        },
+        {
+          "title": "study_country",
+          "label": "study_country",
+          "description": null,
+          "type": "Controlled Vocabulary List",
+          "required": true,
+          "ID": 9
+        },
+        {
+          "title": "resource_use_rights",
+          "label": "resource_use_rights",
+          "description": null,
+          "type": "Linked Extended Metadata",
+          "required": false,
+          "ID": 10
+        },
+        {
+          "title": "resource_role",
+          "label": "resource_role",
+          "description": null,
+          "type": "Linked Extended Metadata (multiple)",
+          "required": false,
+          "ID": 11
+        },
+        {
+          "title": "study_design",
+          "label": "study_design",
+          "description": null,
+          "type": "Linked Extended Metadata",
+          "required": false,
+          "ID": 12
+        }
+      ]
+    }
+  ]
+}

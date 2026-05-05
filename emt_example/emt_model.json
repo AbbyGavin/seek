@@ -1,0 +1,48 @@
+{
+  "title": "Extended Metadata for models v2",
+  "supported_type": "Model",
+  "enabled": true,
+  "attributes": [
+    {
+      "title": "execution_software_label",
+      "type": "Controlled Vocabulary",
+      "required": true,
+      "pos": 1,
+      "ID": 29
+    },
+    {
+      "title": "age_label",
+      "required": true,
+      "pos": 2,
+      "type": "Integer"
+    },
+    {
+      "title": "ontologies_label",
+      "type": "Controlled Vocabulary List",
+      "pos": 3,
+      "ID": 30
+    },
+    {
+      "title": "scale_label",
+      "type": "Controlled Vocabulary",
+      "required": true,
+      "pos": 4,
+      "ID": 31
+    },
+    {
+      "title": "cholesterol_level",
+      "required": true,
+      "type": "Real number",
+      "description": "Cholesterol level",
+      "pos": 5
+    },
+    {
+      "title": "clustering_label",
+      "required": true,
+      "type": "Real number",
+      "description": "Clustering level",
+      "label": "Clustering level",
+      "pos": 6
+    }
+  ]
+}
