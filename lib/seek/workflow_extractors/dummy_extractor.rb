@@ -12,7 +12,7 @@ module Seek
       end
 
       def extract
-        j = JSON.parse(to_extract)
+        j = JSON.parse(@to_extract)
         @title = j['title']
         @description = j['description']
       end
