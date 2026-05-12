@@ -17,7 +17,7 @@ module Seek
         @description = j['description']
       end
 
-      def selt.file_extensions
+      def self.file_extensions
         ['json']
       end
     end
