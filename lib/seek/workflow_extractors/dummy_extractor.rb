@@ -12,7 +12,8 @@ module Seek
       end
 
       def extract
-        j = JSON.parse(@to_extract)
+        json_file = File.read(@to_extract)
+        j = JSON.parse(json_file)
         @title = j['title']
         @description = j['description']
       end
