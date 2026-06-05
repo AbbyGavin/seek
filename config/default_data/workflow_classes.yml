@@ -1,5 +1,5 @@
 cwl_workflow_class:
-  title: Common Workflow Language
+  title: Testing changing things
   key: cwl
   extractor: CWL
   alternate_name: CWL
@@ -33,3 +33,11 @@ snakemake_class:
   extractor: Snakemake
   identifier: https://doi.org/10.1093/bioinformatics/bts480
   url: https://snakemake.readthedocs.io
+
+dummy_class:
+  title: Dummy Test Class
+  key: dummy
+  extractor: Dummy
+  identifier: https://www.example.com
+  url: https://www.example.com
+  avatar_id: 1
