@@ -3,7 +3,7 @@ require 'json'
 module Seek
   module WorkflowExtractors
     # Dummy class for testing. The argument should be a json string
-    class DummyExtractor < Base
+    class Dummy < Base
       attr_accessor :title, :description
 
       def initialize(to_extract)
