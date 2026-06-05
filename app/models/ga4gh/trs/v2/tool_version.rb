@@ -10,7 +10,8 @@ module Ga4gh
             'cwl' => 'CWL',
             'nextflow' => 'NFL',
             'galaxy' => 'GALAXY',
-            'snakemake' => 'SMK'
+            'snakemake' => 'SMK',
+            'dummy' => 'DMY'
         }
 
         def initialize(tool, workflow_version)
