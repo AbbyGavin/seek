@@ -1,5 +1,5 @@
 cwl_workflow_class:
-  title: Testing changing things
+  title: Common Workflow Language
   key: cwl
   extractor: CWL
   alternate_name: CWL
