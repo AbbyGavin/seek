@@ -8,15 +8,7 @@ module Seek
         return @metadata if @metadata
 
         metadata = super
-        puts @io
-        @json_file = if @io.is_a?(Pathname)
-                       File.read(@io.to_s)
-                     elsif @io.respond_to?('path')
-                       File.read(@io.path)
-                     else
-                       @io.read
-                     end
-
+        json_file = @io.read
         j = JSON.parse(json_file)
         metadata[:title] = j['title']
         metadata[:description] = j['description']
